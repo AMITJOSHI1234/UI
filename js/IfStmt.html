@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // to get User Input
+
+        // var budget = parseInt(prompt("Enter your budget to buy Pizza"))
+        // // document.write(typeof (budget))
+        // if (budget >= 400) {
+        //     document.write("You can Buy PIzza");
+        // } else {
+        //     document.write("You can Not Buy PIzza")
+        // }
+
+
+        //Ladder
+        // if(budget>=400){
+        //     document.write("You can Buy a large size chizz Pizza");
+        // }else if(budget>=300){
+        //     document.write("You can Buy a medium size chizz Pizza");
+        // }else if(budget>=200){
+        //     document.write("You can Buy a small size chizz Pizza");
+        // }else if(budget>=100){
+        //     document.write("You can Buy a Regular Pizza");
+        // }else{
+        //     document.write("You can buy burger above 30rs");
+        // }
+
+
+        //nested
+        /* var preScore=parseInt(prompt("Enter Your Pre Score"))
+        var criteria=90;
+        if(preScore>=criteria){
+            var mainsScore=parseInt(prompt("Enter Your mains Score"))
+            if(mainsScore>=criteria){
+                document.write("You are selected");
+            }else{
+                document.write("Your mainsscore="+mainsScore+"is less than the criteria"+criteria);
+            }
+        }else{
+            document.write("Your prescore="+preScore+" is less than the criteria="+criteria);
+        }
+        */
+
+        var username = prompt("enter username");
+        if (username == "Admin") {
+            var password = prompt("enter password");
+            if (password == "paa1234") {
+                document.write("Welcom:" + username);
+            } else {
+                alert("password is not valid")
+            }
+        } else {
+            alert("Username is not valid")
+        }
+    </script>
+</body>
+
+</html>

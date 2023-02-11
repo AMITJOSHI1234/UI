@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let current_date = new Date();
+        document.write("<hr>Current Date=" + current_date);
+        let now = Date.now();//ms
+        document.write("<hr>Now:" + now);
+        document.write("<hr>Day:" + current_date.getDay());
+        document.write("<hr>Date:" + current_date.getDate());
+        document.write("<hr>Year:" + current_date.getFullYear());
+        document.write("<hr>Month:" + current_date.getMonth());
+        document.write("<hr>Hour:" + current_date.getHours());
+        document.write("<hr>Mionutes:" + current_date.getMinutes());
+        document.write("<hr>Seconds:" + current_date.getSeconds());
+        document.write("<hr>Milli Seconds:" + current_date.getTime());
+
+        //Date Constructor
+        var date = new Date(2022);//2 seconds
+        document.write("<hr>Date :" + date);
+        var date = new Date(2022, 3);//year,month
+        document.write("<hr>Date :" + date);
+        var date = new Date(2022, 13, 30);//year,month,date
+        document.write("<hr>Date :" + date);
+        var date = new Date(2022, 3, 12, 6);//year,month,date,hour
+        document.write("<hr>Date :" + date);
+        var date = new Date(2022, 3, 12, 6, 45);//year,month,date,hour,minutes
+        document.write("<hr>Date :" + date);
+        var date = new Date(2022, 3, 12, 6, 45, 8);//year,month,date,hour,minutes,seconds
+        document.write("<hr>Date :" + date);
+        //STring to Date
+        var bdate = "12/03/2020";//m-d-year
+        var bdate = "12-03-2020";//m-d-year
+        var bd = Date.parse(bdate)
+        document.write("<hr>BDate :" + bd);
+        var bd1 = new Date(bd);
+        document.write("<hr>BDate :" + bd1);
+        document.write("<hr>BDate :" + new Date("April 23, 2000"))
+        document.write("<hr>BDate :" + new Date("23 April, 2000"))
+        document.write("<hr>BDate :" + new Date("Jan 22, 2000"))
+        //Date to String
+        document.write("<hr>BDate :" + current_date.toDateString())
+        document.write("<hr>BDate :" + current_date.toLocaleDateString())
+        document.write("<hr>BDate :" + current_date.toTimeString())
+        document.write("<hr>BDate :" + current_date.toLocaleTimeString())
+        document.write("<hr>BDate :" + current_date.toUTCString())
+        document.write("<hr>BDate :" + current_date.toISOString())
+
+// WAP to get your age.
+// WAP to display the notification for the monthly service of laptop;
+
+
+
+    </script>
+</body>
+
+</html>

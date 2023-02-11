@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        hetrogeneoius collection
+resizeable array
+        */
+        arr = ["Rays", 6.6, 0, true]
+        document.write("<br>" + arr[0])
+        document.writeln("<br>Length:" + arr.length)
+        arr[0] = 90
+        document.writeln("<br>Length:" + arr)
+        var va = arr.values()
+        document.write(va + "<br>")
+        for (v of va) {
+            document.write("<br>" + v)
+        }
+        keys = arr.keys()
+        for (i of keys) {
+            document.write("<br>" + i)
+        }
+
+        //add
+        arr.push(90, 89, 67, 56)
+        document.write(arr + "<br>")
+
+        document.write(arr.pop() + "<br>")
+        document.write(arr.indexOf(90)+"<br>");
+        arr.unshift(89)
+        document.write(arr + "<br>")
+        arr.splice(0,0,"RAYs")
+        document.write(arr + "<br>")
+        arr.splice(1,1,"Tech")
+        document.write(arr + "<br>")
+        arr.splice(0,0,"RAYs")
+        document.write(arr[90] + "<br>")
+        arr.length=20
+        arr.splice(0,0,"RAYs")
+        document.write(arr + "<br>")
+    </script>
+</body>
+
+</html>

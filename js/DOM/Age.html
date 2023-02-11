@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateAge(f) {
+            let age = f.age.value;//text
+            if (isNaN(age)) {
+                alert("Please Enter age in Numbers");
+            } else if (age < 0 ) {
+                alert("PLease Enter a positive Number");
+            }else if(age>0 && age<18){
+                alert("Driving le liye bhut chote ho");
+            } 
+            else if (age >= 18 && age <= 80) {
+                alert("You are eligible for Driving licence");
+            } else {
+                alert("aap is jamane ke nhi he");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Age Validator for Vehicle Licence</h1>
+    <form action="">
+        <label for="age">Enter Your age</label>
+        <input type="text" name="age" value="" placeholder="AGE">
+        <button onclick="validateAge(this.form)">CLick</button>
+    </form>
+</body>
+
+</html>

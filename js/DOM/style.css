@@ -1,0 +1,23 @@
+#container{
+    border: 3px solid black;
+    height: 300px;
+    width: 240px;
+    margin: 50px 200px 100px 500px;
+    padding: 40px;
+    box-shadow: 20px 20px 5px gray;
+    border-radius: 30px;
+
+}
+div{
+    
+    padding: 10px;
+    border: 1px solid black;
+}
+input:hover{
+background-color:burlywood;
+
+}
+input{
+    width:180px;
+    padding: 10px;
+}

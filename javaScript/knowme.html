@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know me</title>
+    <style>
+        #heading {
+            text-align: center;
+            font-size: 50px;
+            box-shadow: 10px 10px 5px black;
+            background-color: aqua;
+            background-image: repeating-linear-gradient(blue, red, yellow);
+            animation-name: textopacity;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            margin-top: 200px;
+        }
+
+        button {
+            display: block;
+            width: 50%;
+            border: none;
+            background-color: #04AA6D;
+            padding: 14px 28px;
+            font-size: 16px;
+            /* cursor: pointer; */
+            text-align: center;
+        }
+
+
+        @keyframes textopacity {
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+    <script>
+        function getData() {
+            document.getElementById("heading").innerHTML =
+                "Hello my name is Amit. I am a software Engineer currently doing traning in rays on Java.My hobbies is playing games,lisning music,Watching movies.";       
+        }
+
+        function closeData(){
+            document.getElementById("heading").innerHTML="Want to know About me";
+        }
+    </script>
+</head>
+
+<body bgcolor="wheat">
+    <div>
+        <h2 id="heading">Want to know About me</h2>
+        <center><button onclick="getData()" ondblclick="closeData()">ClickHere</button></center>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var lives;
+        for (lives = 1; lives <= 5; lives++) {
+            document.write("play games:" + lives + "<br>")
+        }
+        document.write("------------------------------<br>")
+        arr = ['a', 'b', 'c', 'd']
+        for (i in arr) {
+            document.write(i + "=" + arr[i] + "<br>");
+        }
+
+        document.write("----------For IN--------------------<br>")
+        obj = { name: "rays", rollno: 1, address: "indore" }
+        for (key in obj) {
+            document.write(key + "=" + obj[key] + "<br>");
+        }
+        document.write("----------For Of--------------------<br>")
+        for (value of arr) {
+            document.write(value + "<br>");
+
+        }
+
+
+    </script>
+</body>
+
+</html>

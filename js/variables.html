@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //how to create a variable
+        //using var keyword
+        /*var keyword is used to create global varibles
+        we can redecalre the variable if we are using var keyword */
+         age = 10;
+       age=45
+        function m1() {
+            /*Block(Local var) level access
+            we can not redecalre the variable if we are using let keyword
+            we can reassign;
+            */
+            let a = 11;
+            
+            console.log("within Block:=" + a)
+            console.log("within Function=" + age)
+            // let a;//error 
+            a = 15;
+            console.log("within Block:=" + a)
+        }
+        m1();
+        var age = 20;
+        function m2() {
+            var name="Rays"
+            // console.log(a)
+            console.log("Name in M2=" + name)
+        }
+
+        m2();
+        name="RTec"
+        console.log("Outside=" + age)
+        console.log("Name Outside=" + name)
+        // to create constant
+        /*we can use const keyword to create constant
+        we can not redeclare
+        we can not reassign
+        */
+        const pi = 3.14;//fixed value
+        console.log(pi)
+        // const pi = 3.16;
+        // pi=3.0;
+        console.log(pi)
+    </script>
+</body>
+
+</html>
